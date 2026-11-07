@@ -1,0 +1,33 @@
+{
+  "skill": "ios-contact-logo",
+  "test_cases": [
+    {
+      "name": "ford_official_variants",
+      "input": "Ford",
+      "assertions": [
+        "Returns one or two optimized JPG files",
+        "At least one is the official Ford oval or script logo",
+        "Images are square 1024x1024 with white background",
+        "Files are under 200 KB"
+      ]
+    },
+    {
+      "name": "apple_single_or_double",
+      "input": "Apple",
+      "assertions": [
+        "Returns optimized JPG of official Apple logo",
+        "Image is centered with padding suitable for circular crop",
+        "Delivered as render_file"
+      ]
+    },
+    {
+      "name": "starbucks_wordmark_preference",
+      "input": "Starbucks",
+      "assertions": [
+        "Prefers two options when available (full logo + wordmark or siren variant)",
+        "Single option is official logo only",
+        "Uses official sources rather than generated approximations"
+      ]
+    }
+  ]
+}
